@@ -26,9 +26,6 @@ open class FeatureModulePlugin : Plugin<Project> {
             }
 
             dependencies {
-                implementation(rootProject.project(":ui"))
-                implementation(rootProject.project(":domain"))
-
                 implementation(libs.library("composeUi"))
                 implementation(libs.library("composeUiGraphics"))
                 implementation(libs.library("composeUiToolingPreview"))

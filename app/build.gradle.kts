@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.buildLogicModuleAndroidApplication)
+    alias(libs.plugins.buildLogicPrimitiveCompose)
     alias(libs.plugins.buildLogicPrimitiveNavigationCompose)
 }
 
@@ -25,11 +26,4 @@ android {
 }
 
 dependencies {
-    implementation(projects.data)
-    implementation(projects.domain)
-    implementation(projects.ui)
-    implementation(projects.tools.debug)
-
-    // feature modules
-    implementation(projects.ui.feature.example)
 }
